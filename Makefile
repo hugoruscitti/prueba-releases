@@ -186,7 +186,7 @@ compilar_live:
 version: version_patch
 
 version_patch:
-	ember release --patch
+	ember release
 
 version_minor:
 	ember release --minor
