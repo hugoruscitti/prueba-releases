@@ -54,8 +54,9 @@ comandos:
 	@echo "    ${G}version_minor${N}     Genera una nueva versión (0.MINOR.0)."
 	@echo "    ${G}version_major${N}     Genera una nueva versión (MAJOR.0.0)."
 	@echo ""
-	@echo "    ${G}binarios${N}          Genera los binarios."
-	@echo "    ${G}subir_a_dropbox${N}   Sube los binarios generados a dropbox."
+	@echo "    ${G}binarios_electron${N}              Genera los binarios."
+	@echo "    ${G}binarios (EN DESUSO)${N}           Genera los binarios."
+	@echo "    ${G}subir_a_dropbox (EN DESUSO)${N}    Sube los binarios generados a dropbox."
 	@echo ""
 
 
@@ -265,13 +266,29 @@ run:
 	@echo "${G}Iniciando ember ...${N}"
 	./node_modules/ember-cli/bin/ember serve
 
+binarios_electron: build _preparar_electron _compilar_electron_osx _compilar_electron_win32
 
-compilar_a_electron:
-	ember build
-	cp extras/electron.js dist
-	cp extras/package.json dist
-	node_modules/.bin/electron-packager dist "pilasBloques" --app-version=${VERSION} --platform=all --arch=all --version=0.37.6 --ignore=node_modules --ignore=bower_components --out=binarios --overwrite
+_preparar_electron:
+	@echo "${G}Preparando directorio dist para funcionar con electron...${N}"
+	@cp extras/electron.js dist
+	@cp extras/package.json dist
 
+_compilar_electron_osx:
+	@echo "${G}Iniciando compilación a electron a OSX...${N}"
+	rm -f tmp/pilas-bloques-${VERSION}.dmg
+	node_modules/.bin/electron-packager dist "pilasBloques" --app-version=${VERSION} --platform=darwin --arch=all --version=0.37.6 --ignore=node_modules --ignore=bower_components --out=binarios --overwrite --icon=extras/icono.icns
+	hdiutil create tmp/pilas-bloques-${VERSION}.dmg -srcfolder ./binarios/pilasBloques-darwin-x64/pilasBloques.app -size 200mb
+
+
+_compilar_electron_win32:
+	@echo "${G}Iniciando compilación a electron a Windows...${N}"
+	node_modules/.bin/electron-packager dist "pilasBloques" --app-version=${VERSION} --platform=win32 --arch=ia32 --version=0.37.6 --ignore=node_modules --ignore=bower_components --out=binarios --overwrite --icon=extras/icono.ico
+	@echo "${G}Generando instalador para windows...${N}"
+	cp extras/instalador.nsi binarios/pilasBloques-win32-ia32/
+	cd binarios/pilasBloques-win32-ia32/; makensis instalador.nsi
+	mv binarios/pilasBloques-win32-ia32/pilas-bloques.exe tmp/pilas-bloques-${VERSION}.exe
+	
+	
 
 
 .PHONY: dist bajar_dependencias
