@@ -1,7 +1,9 @@
 ---
 language: objective-c
 sudo: false
-
+cache:
+  directories:
+  - node_modules
 install:
 - npm install
 - bower install
@@ -24,6 +26,7 @@ before_deploy:
 - echo "Detectando version $VERSION para compilar"
 - make binarios_electron
 deploy:
+  skip_cleanup: true
   provider: releases
   api_key:
     secure: fbFjwQR7L/0GgRYuxdnOP/TAyCI/scrQtv+0YgMIeuKU9l9UgiX1q3bwyDoBCR2YZlyJkZEEz3I6eKZGq9pR2GjvSpUX3qfmyf9U5vgUFYobFHt0wX2yYchR5P8NV/8IozTCpyg0CjVyb79Y0c1PT2HaAdosTRtL+HiwrMHgyOOfaL40+x1qllj3diH9XkFlXmu8oq4ohi2oEbD6+xWD/ZIsWZIF5fjtKJNYrARrhNv4rNyNZfWEOSOK0LKpaoHLt7YltoKemvF6INjvBOK45Z1IUSbR4bvki+THWu6KhV5x3gLcuwDD3T2BuxTmEU/eRGCD9/uy3udhU9dm6p6sc1I2w6jfYRxIKpsaFbzRoaXbbB57eRMQw6yBAujf10QvZH+//GEoDff1gfv8VCTPs14M3RggMkfwYeEEr4SVgHsslEMB4DMaFsGVTbspEuyNUtYyhBQHu7sJTtlQgUmkyMAyxsc1OBfm2KsfEoISQ99Zaq5rddhsxdThd+np36dgyEEE48eAMu1tQaulaUZuPHm6n+dWZlh5xaJssiBZsKUR/8M3EHW4uGWsnDLs+B1LkB2A3YNKq9B9XU9DD6YMi2/U5m/lKlUAuEA4da++WiEnmqT76wklvidqemfv/C7xaaBQfkn+ohIHozaQfo/4uJEhIorZzQvYqMpsmw8QSKk=
