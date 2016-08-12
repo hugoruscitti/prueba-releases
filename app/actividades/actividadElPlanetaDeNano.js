@@ -1,6 +1,6 @@
-import {AccionBuilder, Repetir, Si, Sino, Hasta, Procedimiento} from 'pilas-engine-bloques/actividades/bloques';
-import {IrDerecha, IrArriba} from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import {Numero} from 'pilas-engine-bloques/actividades/expresiones';
+import {AccionBuilder, Repetir, Si, Sino, Hasta, Procedimiento} from 'prueba-releases/actividades/bloques';
+import {IrDerecha, IrArriba} from 'prueba-releases/actividades/direccionesCuadricula';
+import {Numero} from 'prueba-releases/actividades/expresiones';
 
 var ComerBanana = AccionBuilder.build({
   descripcion: 'Comer Banana',

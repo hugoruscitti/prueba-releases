@@ -1,10 +1,10 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
 
 var {AccionBuilder, Repetir, Si, Sino, Hasta, Procedimiento} = bloques;
 var {ParaLaDerecha, ParaLaIzquierda,ParaArriba, ParaAbajo,
   IrAbajo,IrArriba,IrIzquierda,IrDerecha} = direcciones;
-import {Numero, OpComparacion, OpAritmetica} from 'pilas-engine-bloques/actividades/expresiones';
+import {Numero, OpComparacion, OpAritmetica} from 'prueba-releases/actividades/expresiones';
 
 var PrenderFogata = AccionBuilder.build({
   descripcion: 'Prender fogata',

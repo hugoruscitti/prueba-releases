@@ -1,5 +1,5 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import {Numero, OpAritmetica} from 'pilas-engine-bloques/actividades/expresiones';
+import bloques from 'prueba-releases/actividades/bloques';
+import {Numero, OpAritmetica} from 'prueba-releases/actividades/expresiones';
 
 var {Accion, Repetir, Si, Sino, Hasta, Procedimiento, ParamValor} = bloques;
 

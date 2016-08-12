@@ -1,5 +1,5 @@
-import {AccionBuilder,Procedimiento,Repetir,Si,Sino,Hasta} from 'pilas-engine-bloques/actividades/bloques';
-import {Numero,OpAritmetica} from 'pilas-engine-bloques/actividades/expresiones';
+import {AccionBuilder,Procedimiento,Repetir,Si,Sino,Hasta} from 'prueba-releases/actividades/bloques';
+import {Numero,OpAritmetica} from 'prueba-releases/actividades/expresiones';
 
 var CambiarColor = AccionBuilder.build({
   descripcion: 'Cambiar color del foco',

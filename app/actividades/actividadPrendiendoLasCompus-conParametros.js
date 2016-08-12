@@ -1,7 +1,7 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import {ParaLaDerecha, ParaLaIzquierda, ParaArriba, ParaAbajo, MoverA} from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import {Numero, OpAritmetica} from 'pilas-engine-bloques/actividades/expresiones';
-import {PrenderCompu, EstoyEnEsquina} from 'pilas-engine-bloques/actividades/bloquesCompus';
+import bloques from 'prueba-releases/actividades/bloques';
+import {ParaLaDerecha, ParaLaIzquierda, ParaArriba, ParaAbajo, MoverA} from 'prueba-releases/actividades/direccionesCuadricula';
+import {Numero, OpAritmetica} from 'prueba-releases/actividades/expresiones';
+import {PrenderCompu, EstoyEnEsquina} from 'prueba-releases/actividades/bloquesCompus';
 
 var {Repetir, Si, Sino, Hasta, Procedimiento} = bloques;
 

@@ -1,4 +1,4 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
+import bloques from 'prueba-releases/actividades/bloques';
 var {Accion, AccionBuilder} = bloques;
 
 var IrDerecha = Accion.extend({

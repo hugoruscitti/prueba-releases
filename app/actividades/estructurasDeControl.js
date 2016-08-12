@@ -1,5 +1,5 @@
-import Bloque from 'pilas-engine-bloques/actividades/bloque';
-import {ParamValor} from 'pilas-engine-bloques/actividades/bloques';
+import Bloque from 'prueba-releases/actividades/bloque';
+import {ParamValor} from 'prueba-releases/actividades/bloques';
 
 var EstructuraDeControl = Bloque.extend({
 

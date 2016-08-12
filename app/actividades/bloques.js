@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import Bloque from 'pilas-engine-bloques/actividades/bloque';
-import {MisProcedimientos, Repeticiones, Alternativas, Variables,Sensores,MisFunciones, Valores} from 'pilas-engine-bloques/actividades/categorias';
+import Bloque from 'prueba-releases/actividades/bloque';
+import {MisProcedimientos, Repeticiones, Alternativas, Variables,Sensores,MisFunciones, Valores} from 'prueba-releases/actividades/categorias';
 
 /*
  * Pide implementar sólo block_javascript

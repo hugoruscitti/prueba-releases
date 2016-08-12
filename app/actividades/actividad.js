@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import Lenguaje from 'pilas-engine-bloques/actividades/lenguaje';
+import bloques from 'prueba-releases/actividades/bloques';
+import Lenguaje from 'prueba-releases/actividades/lenguaje';
 
 var {/*Bloque, CambioDeJSDeBlocky,*/ VariableGet,
      VariableSet, VariableLocalGet, VariableLocalSet, Procedimiento,

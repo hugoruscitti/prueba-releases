@@ -1,5 +1,5 @@
-import {comunes,LargoColumnaActual} from 'pilas-engine-bloques/actividades/bloquesMonoContando';
-import {RepetirVacio} from 'pilas-engine-bloques/actividades/bloques';
+import {comunes,LargoColumnaActual} from 'prueba-releases/actividades/bloquesMonoContando';
+import {RepetirVacio} from 'prueba-releases/actividades/bloques';
 
 export default {
   // DEPRECATED: nombre: 'El mono cuenta de nuevo',

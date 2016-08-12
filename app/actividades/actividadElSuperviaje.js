@@ -1,4 +1,4 @@
-import {AccionBuilder, Repetir, RepetirVacio, Si, Sino, Hasta, Procedimiento} from 'pilas-engine-bloques/actividades/bloques';
+import {AccionBuilder, Repetir, RepetirVacio, Si, Sino, Hasta, Procedimiento} from 'prueba-releases/actividades/bloques';
 
 var Avanzar1km = AccionBuilder.build({
   descripcion: 'Avanzar 1 Km',

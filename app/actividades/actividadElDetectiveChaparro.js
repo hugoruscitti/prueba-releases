@@ -1,4 +1,4 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
+import bloques from 'prueba-releases/actividades/bloques';
 var {AccionBuilder, Repetir, Si, Sino, Procedimiento, Hasta} = bloques;
 
 var PrimerSospechoso = AccionBuilder.build({

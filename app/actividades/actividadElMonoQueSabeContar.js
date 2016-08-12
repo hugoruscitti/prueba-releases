@@ -1,4 +1,4 @@
-import {comunes,EstoyAlFin} from 'pilas-engine-bloques/actividades/bloquesMonoContando';
+import {comunes,EstoyAlFin} from 'prueba-releases/actividades/bloquesMonoContando';
 
 export default {
   // DEPRECATED: nombre: 'El mono que sabe contar',

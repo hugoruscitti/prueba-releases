@@ -1,7 +1,7 @@
-import {Repetir, Si, Sino, Hasta, Procedimiento, AccionBuilder} from 'pilas-engine-bloques/actividades/bloques';
-import {IrArriba, IrAbajo, SiguienteColumna} from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import {TocandoBanana, TocandoManzana} from 'pilas-engine-bloques/actividades/tocando';
-import {ContarBanana, ContarManzana} from 'pilas-engine-bloques/actividades/contando';
+import {Repetir, Si, Sino, Hasta, Procedimiento, AccionBuilder} from 'prueba-releases/actividades/bloques';
+import {IrArriba, IrAbajo, SiguienteColumna} from 'prueba-releases/actividades/direccionesCuadricula';
+import {TocandoBanana, TocandoManzana} from 'prueba-releases/actividades/tocando';
+import {ContarBanana, ContarManzana} from 'prueba-releases/actividades/contando';
 
 var LargoColumnaActual = AccionBuilder.buildSensorNumerico({
   id: 'LargoColumnaActual',

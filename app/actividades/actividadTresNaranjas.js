@@ -1,7 +1,7 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import comer from 'pilas-engine-bloques/actividades/comer';
-import tocando from 'pilas-engine-bloques/actividades/tocando';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
+import comer from 'prueba-releases/actividades/comer';
+import tocando from 'prueba-releases/actividades/tocando';
 
 var {Repetir,Si,Sino,Procedimiento} = bloques;
 var {IrDerecha} = direcciones;

@@ -2,11 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'pilas-engine-bloques',
+    modulePrefix: 'prueba-releases',
     environment: environment,
     baseURL: '/',
     versionURL: 'http://pilasbloques.programar.gob.ar/version.json',
-    downloadURL: 'http://hugoruscitti.github.io/pilas-engine-bloques/descargas/pilas-engine-bloques-VERSION.zip',
+    downloadURL: 'http://hugoruscitti.github.io/prueba-releases/descargas/prueba-releases-VERSION.zip',
     locationType: 'hash',
     cursoBackendURL: 'http://api.pilasbloques.program.ar',
     EmberENV: {

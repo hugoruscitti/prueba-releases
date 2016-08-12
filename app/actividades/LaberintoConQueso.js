@@ -1,5 +1,5 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
 
 var {Repetir,Si,Procedimiento} = bloques;
 var {IrDerecha, IrAbajo} = direcciones;

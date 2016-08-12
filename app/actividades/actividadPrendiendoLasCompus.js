@@ -1,7 +1,7 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
 
-import {PrenderCompu, EstoyEnEsquina} from 'pilas-engine-bloques/actividades/bloquesCompus';
+import {PrenderCompu, EstoyEnEsquina} from 'prueba-releases/actividades/bloquesCompus';
 var {Repetir, Si, Sino, Hasta, Procedimiento} = bloques;
 var {IrIzquierda, IrDerecha, IrArriba, IrAbajo} = direcciones;
 

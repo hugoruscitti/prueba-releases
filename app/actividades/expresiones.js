@@ -1,5 +1,5 @@
-import Bloque from 'pilas-engine-bloques/actividades/bloque';
-import {Operadores, Valores} from 'pilas-engine-bloques/actividades/categorias';
+import Bloque from 'prueba-releases/actividades/bloque';
+import {Operadores, Valores} from 'prueba-releases/actividades/categorias';
 
 
 var ExpresionDeBlockly = Bloque.extend({

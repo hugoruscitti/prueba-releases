@@ -1,6 +1,6 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import bloquesTito from 'pilas-engine-bloques/actividades/bloquesTito';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
+import bloquesTito from 'prueba-releases/actividades/bloquesTito';
 var {Repetir, Si, Sino, Procedimiento} = bloques;
 var {IrAbajo} = direcciones;
 var {EncenderLuz,TocandoLuz} = bloquesTito;

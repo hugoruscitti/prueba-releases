@@ -1,4 +1,4 @@
-import { prism } from 'pilas-engine-bloques/helpers/prism';
+import { prism } from 'prueba-releases/helpers/prism';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | prism');

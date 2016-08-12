@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import {Comandos} from 'pilas-engine-bloques/actividades/categorias';
+import {Comandos} from 'prueba-releases/actividades/categorias';
 
 Blockly.Blocks.primitivas = { };
 Blockly.Blocks.sensores = { };

@@ -1,6 +1,6 @@
-import bloques from 'pilas-engine-bloques/actividades/bloques';
-import direcciones from 'pilas-engine-bloques/actividades/direccionesCuadricula';
-import comer from 'pilas-engine-bloques/actividades/comer';
+import bloques from 'prueba-releases/actividades/bloques';
+import direcciones from 'prueba-releases/actividades/direccionesCuadricula';
+import comer from 'prueba-releases/actividades/comer';
 
 
 var {Repetir, Procedimiento} = bloques;

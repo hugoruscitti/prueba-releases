@@ -1,4 +1,4 @@
-import {AccionBuilder} from 'pilas-engine-bloques/actividades/bloques';
+import {AccionBuilder} from 'prueba-releases/actividades/bloques';
 
 var PrenderCompu = AccionBuilder.build({
   descripcion: 'Prender compu',
