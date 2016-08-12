@@ -15,6 +15,9 @@ before_install:
   - git clone https://github.com/creationix/nvm.git ~/.nvm
   - source ~/.nvm/nvm.sh
   - nvm install 4.2
+  - nvm use 4.2
   - npm config set spin false
   - npm install -g bower
   - npm install -g phantomjs-prebuilt
+  - npm install -g grunt-cli
+  - npm install -g node-gyp
