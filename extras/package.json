@@ -1,0 +1,6 @@
+{
+  "name": "pilas-engine-bloques",
+  "version": "0.11.1",
+  "description": "Una herramienta para aprender a programar utilizando bloques.",
+  "main": "electron.js"
+}

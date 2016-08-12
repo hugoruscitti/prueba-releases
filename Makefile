@@ -265,4 +265,13 @@ run:
 	@echo "${G}Iniciando ember ...${N}"
 	./node_modules/ember-cli/bin/ember serve
 
+
+compilar_a_electron:
+	ember build
+	cp extras/electron.js dist
+	cp extras/package.json dist
+	node_modules/.bin/electron-packager dist "pilasBloques" --app-version=${VERSION} --platform=all --arch=all --version=0.37.6 --ignore=node_modules --ignore=bower_components --out=binarios --overwrite
+
+
+
 .PHONY: dist bajar_dependencias
