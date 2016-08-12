@@ -18,11 +18,10 @@ app.on('window-all-closed', function onWindowAllClosed() {
 app.on('ready', function onReady() {
 
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 951,
+    height: 672,
     minWidth: 500,
     minHeight: 500,
-    //titleBarStyle: 'hidden'
   });
 
   //mainWindow.openDevTools();
