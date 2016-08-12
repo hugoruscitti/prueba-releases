@@ -11,7 +11,9 @@ script:
   - npm test
 
 before_install:
-  - brew install nvm
+  - rm -rf ~/.nvm
+  - git clone https://github.com/creationix/nvm.git ~/.nvm
+  - source ~/.nvm/nvm.sh
   - nvm install 4.2
   - npm config set spin false
   - npm install -g bower
