@@ -21,3 +21,7 @@ before_install:
   - npm install -g phantomjs-prebuilt
   - npm install -g grunt-cli
   - npm install -g node-gyp
+
+before_deploy:
+  - VERSION=$(shell scripts/obtenerVersion.sh)
+  - echo "Detectando version $VERSION para compilar"
