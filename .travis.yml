@@ -22,6 +22,7 @@ before_install:
 before_deploy:
 - VERSION=$(sh scripts/obtenerVersion.sh)
 - echo "Detectando version $VERSION para compilar"
+- make binarios_electron
 deploy:
   provider: releases
   api_key:
