@@ -11,6 +11,7 @@ install:
 script:
 - npm test
 before_install:
+- brew info wine
 - brew install makensis
 - brew install wine
 - rm -rf ~/.nvm
