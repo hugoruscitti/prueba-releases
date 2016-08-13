@@ -6,6 +6,7 @@ cache:
   - node_modules
   - $HOME/.npm
   - $HOME/.cache # includes bowers cache
+  - cache
 install:
 - npm install
 - bower install
@@ -13,10 +14,10 @@ install:
 script:
 - npm test
 before_install:
-- brew info wine
 - brew update
-- brew info wine
+- brew install curl
 - brew install makensis
+- cd $TRAVIS_BUILD_DIR && travis/download-homebrew
 - brew install wine
 - rm -rf ~/.nvm
 - git clone https://github.com/creationix/nvm.git ~/.nvm
