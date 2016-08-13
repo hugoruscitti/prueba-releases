@@ -4,6 +4,8 @@ sudo: false
 cache:
   directories:
   - node_modules
+  - $HOME/.npm
+  - $HOME/.cache # includes bowers cache
 install:
 - npm install
 - bower install
