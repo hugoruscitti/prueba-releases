@@ -18,7 +18,6 @@ before_install:
 - brew install curl
 - brew install makensis
 - cd $TRAVIS_BUILD_DIR && travis/download-homebrew
-- brew install wine
 - rm -rf ~/.nvm
 - git clone https://github.com/creationix/nvm.git ~/.nvm
 - source ~/.nvm/nvm.sh
