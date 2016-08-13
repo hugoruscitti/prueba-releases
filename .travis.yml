@@ -11,7 +11,8 @@ install:
 script:
 - npm test
 before_install:
-- brew upgrade
+- brew info wine
+- brew update
 - brew info wine
 - brew install makensis
 - brew install wine
