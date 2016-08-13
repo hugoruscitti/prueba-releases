@@ -3,6 +3,7 @@ NOMBRE="pilas-bloques"
 
 
 
+
 N=[0m
 G=[01;32m
 Y=[01;33m
