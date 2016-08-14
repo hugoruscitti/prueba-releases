@@ -42,3 +42,4 @@ deploy:
     - "tmp/pilas-bloques-${VERSION}.exe"
   on:
     tags: true
+    all_branches: true
