@@ -41,4 +41,4 @@ deploy:
     - "tmp/pilas-bloques-${VERSION}.dmg"
     - "tmp/pilas-bloques-${VERSION}.exe"
   on:
-    repo: hugoruscitti/prueba-releases
+    tags: true
